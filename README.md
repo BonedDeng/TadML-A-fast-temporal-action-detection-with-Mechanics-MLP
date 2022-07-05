@@ -1,6 +1,6 @@
 # [TadML: A fast temporal action detection with Mechanics-MLP](https://github.com/BonedDeng/TadML)
 
-By Bowen Deng, Dongchang Liu.
+
 
 ## Introduction
 
