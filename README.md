@@ -47,7 +47,6 @@ pip install -r requirements.txt
 ```
 @article{TadML,
   title={TadML: A fast temporal action detection with Mechanics-MLP},
-  author={Bowen Deng, Dongchang Liu},
   year={2022}
 }
 ```
