@@ -1,0 +1,62 @@
+# Define the dataset configuration for THUMOS
+dataset = {
+    'dataset_name': 'thumos',
+    'train_split': ['validation'],
+    'val_split': ['test'],
+    'json_file': './data/thumos/annotations/thumos14.json',
+    'feat_folder': './data/thumos/i3d_features',
+    'file_prefix': '',
+    'file_ext': '.npy',
+    'num_classes': 20,
+    'input_dim': 2048,
+    'feat_stride': 4,
+    'num_frames': 16,
+    # serve as data augmentation
+    'trunc_thresh': 0.5,
+    'crop_ratio': [0.9, 1.0],
+    'max_seq_len': 2304,
+}
+
+# Define the model configuration
+model = {
+    'fpn_type': 'identity',
+    'max_buffer_len_factor': 6.0,
+    'n_mha_win_size': 19,
+}
+
+# Define the training options
+opt = {
+    'learning_rate': 0.0001,
+    'epochs': 100,
+    'weight_decay': 0.05,
+}
+
+# Define the data loader options
+loader = {
+    'batch_size': 2,
+}
+
+# Define the training configuration
+train_cfg = {
+    'init_loss_norm': 100,
+    'clip_grad_l2norm': 1.0,
+    'cls_prior_prob': 0.01,
+    'center_sample': 'radius',
+    'center_sample_radius': 1.5,
+}
+
+# Define the testing configuration
+test_cfg = {
+    'voting_thresh': 0.7,
+    'pre_nms_topk': 2000,
+    'max_seg_num': 200,
+    'min_score': 0.001,
+    # when using external scores, our model is generating "proposals"
+    'multiclass_nms': False,
+    'ext_score_file': './data/thumos/annotations/thumos14_cls_scores.pkl',
+    # comment out L47-48 and uncomment L50 to disable score fusion
+    # 'multiclass_nms': True,
+}
+
+# Define the output folder for checkpoints
+output_folder = './ckpt/'

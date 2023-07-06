@@ -1,0 +1,9 @@
+PyTorch==1.10 
+TensorBoard
+numpy==1.24.2
+PyYaml
+Pandas
+h5py
+joblib
+
+

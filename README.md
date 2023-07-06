@@ -8,7 +8,7 @@
 *•* TadML proves that optical flow data is not indispensable in TAD apllication.Neck layers is the key to improve performance in both RGB stream and two stream.*βGiou* is More suitable for Tad
 *•* We first propose a MLP model based on the newtonian mechanics, which prove MLP also suitable for TAD.It achieves highly competitive performance when using RGB and optical flow.
 
-![](./figer2.jpg)
+![](./Figure.jpg)
 
 ## Updates
 
@@ -33,13 +33,43 @@
 | One-stage | TadML  | X          | 73.29 69.73 62.53 53.36 39.60 59.70    |
 
 ## Install
+# Compilation
+
+Part of NMS is implemented in C++. The code can be compiled by
+
+```shell
+cd /train
+python setup.py install --user
+cd ..
+```
+
+The code should be recompiled every time you update PyTorch.
+This folder
+│   README.md
+│   ...  
+│
+└───data/
+│    └───thumos/
+│    │	 └───annotations/
+│    │	 └───i3d_features/
+│    │   └───...    
+│    └───...
+└───hyps/
+│ 
+└───libs
+│ 
+└───ckpt
+```
 
 ### Requirements
 
 ```linux
 pip install -r requirements.txt
 ```
-
+* Train TadMLP with thumos dataset and save ckpt in root directory.
+```shell
+python mian.py /hyps/thumos_i3d.yaml --output reproduce
+```
 
 
 ## Citing
@@ -47,7 +77,8 @@ pip install -r requirements.txt
 ```
 @article{TadML,
   title={TadML: A fast temporal action detection with Mechanics-MLP},
-  year={2022}
+  auther={Bowen deng;Shuangliang Zhao;Dongchang Liu}
+  year={2023}
 }
 ```
 
