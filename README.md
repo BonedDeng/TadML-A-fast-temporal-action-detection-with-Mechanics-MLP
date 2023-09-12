@@ -8,7 +8,7 @@
 • TadML proves that optical flow data is not indispensable in TAD apllication.Neck layers is the key to improve performance in both RGB stream and two stream.*βGiou* is More suitable for Tad
 • We first propose a MLP model based on the newtonian mechanics, which prove MLP also suitable for TAD.It achieves highly competitive performance when using RGB and optical flow.
 
-![](./Figure.jpg)
+![](./figer2.jpg)
 
 ## Updates
 
