@@ -27,14 +27,14 @@
 
 - THUMOS14
 
-| Type      | Method | RGB stream | 0.3	0.4	0.5	0.6	0.7	Avg | <br>
-| Two-stage | BMN    | X          | 56    47.4  38.8  29.7  20.5  38.48    | <br>
-| Two-stage | BSN++  | X          | 59.9  45.9  41.3  31.9  22.8  40.36    | <br>
-| Two-stage | TAL-net| X          | 53.2  48.5  42.8  33.8  20.8  39.8     | <br>
-| Two-stage | ContextLoc| X        | 68.3  63.8  54.3  41.8  26.2  50.88    | <br>
-| One-stage | TadTR  |  X         | 62.4  57.4  49.2  37.8  26.3  46.6     | <br>
-| One-stage | TadML  | X          | 68.78 64.66 56.61 45.40 31.88 **53.46**    | <br>
-| One-stage | TadML  | ✓          | 73.29 69.73 62.53 53.36 39.60 **59.70**    | <br>
+| Type      | Method | RGB stream | 0.3	0.4	0.5	0.6	0.7	Avg | 
+| Two-stage | BMN    | X          | 56    47.4  38.8  29.7  20.5  38.48    | 
+| Two-stage | BSN++  | X          | 59.9  45.9  41.3  31.9  22.8  40.36    | 
+| Two-stage | TAL-net| X          | 53.2  48.5  42.8  33.8  20.8  39.8     | 
+| Two-stage | ContextLoc| X        | 68.3  63.8  54.3  41.8  26.2  50.88    | 
+| One-stage | TadTR  |  X         | 62.4  57.4  49.2  37.8  26.3  46.6     | 
+| One-stage | TadML  | X          | 68.78 64.66 56.61 45.40 31.88 **53.46**    | 
+| One-stage | TadML  | ✓          | 73.29 69.73 62.53 53.36 39.60 **59.70**    | 
  
 ## Install
 # Compilation
@@ -46,6 +46,7 @@ cd /train
 python setup.py install --user
 cd ..
 The code should be recompiled every time you update PyTorch.
+```
 ```
 Folder Structure:
 .
@@ -59,7 +60,7 @@ Folder Structure:
 ├── hyps/
 ├── libs/
 └── ckpt/
-
+```
 
 ### Requirements
 
