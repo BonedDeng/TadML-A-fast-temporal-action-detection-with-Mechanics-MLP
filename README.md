@@ -5,8 +5,8 @@
 ## Introduction
 
 •To the best of our knowledge,TadML achieves state-of-the-art or highly com petitive performance on standard datasets while surpassing the inference speed of previous methods by a large margin and the inference speed on model is astounding 4.44 video per second on THUMOS14.
-*•* TadML proves that optical flow data is not indispensable in TAD apllication.Neck layers is the key to improve performance in both RGB stream and two stream.*βGiou* is More suitable for Tad
-*•* We first propose a MLP model based on the newtonian mechanics, which prove MLP also suitable for TAD.It achieves highly competitive performance when using RGB and optical flow.
+• TadML proves that optical flow data is not indispensable in TAD apllication.Neck layers is the key to improve performance in both RGB stream and two stream.*βGiou* is More suitable for Tad
+• We first propose a MLP model based on the newtonian mechanics, which prove MLP also suitable for TAD.It achieves highly competitive performance when using RGB and optical flow.
 
 ![](./Figure.jpg)
 
