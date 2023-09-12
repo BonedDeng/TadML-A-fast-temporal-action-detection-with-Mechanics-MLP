@@ -75,15 +75,27 @@ python mian.py /hyps/thumos_i3d.yaml --output reproduce
 
 
 ## Citing
-
+if you wanna interesting in publish
 ```
 @article{TadML,
   title={TadML: A fast temporal action detection with Mechanics-MLP},
   auther={Bowen deng;Shuangliang Zhao;Dongchang Liu}
+  booktitle={Computer Graphics International},
+  series={LNCS},
+  year={2023}
+}
+```
+arxiv publish
+```
+@article{TadML,
+  title={TadML: A fast temporal action detection with Mechanics-MLP},
+  auther={Bowen deng;Shuangliang Zhao;Dongchang Liu}
+  journal={arXiv e-prints},
   year={2023}
 }
 ```
 
 ## Contact
 
-For questions and suggestions, please contact Bowen Deng.
+For questions and suggestions, please contact Bowen Deng by email ("a18608202465 at gmail dot com").
+
