@@ -19,9 +19,9 @@
 
 
 - [x]  add mlp model code
-- [ ] add inference code
-- [ ] add training code
-- [ ] support training/inference with video input
+- [x] add inference code
+- [x] add training code
+- [x] support training/inference with video input
 
 ## Main Results
 
