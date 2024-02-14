@@ -81,6 +81,7 @@ if you wanna interesting in publish
   title={TadML: A fast temporal action detection with Mechanics-MLP},
   auther={Bowen deng;Shuangliang Zhao;Dongchang Liu}
   booktitle={Computer Graphics International},
+  doi = {https://doi.org/10.1007/978-3-031-50069-5_4},
   series={LNCS},
   year={2023}
 }
